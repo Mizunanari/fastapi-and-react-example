@@ -3,26 +3,23 @@
 FastAPIとReactで作られたサンプルページです。
 ローカルに保存されたJSONデータを渡し、Webページにて表示します。
 
+ポケモン情報の取得先: https://github.com/fanzeyi/pokemon.json.git
+
 ```
 .
 ├── README.md
 ├── api                             # FastAPIで作られたWebAPI
 │   ├── README.md
-│   ├── api
+│   ├── api                         # pythonプログラム
 │   ├── poetry.lock
-│   ├── poetry.toml
 │   ├── pokemon.json
 │   ├── pyproject.toml
 │   └── tests
-├── doc
-│   └── start.md
 └── sample-spa                      # reactで作られたサンプルページ
     ├── README.md
-    ├── build
-    ├── node_modules
     ├── package.json
     ├── public
-    ├── src
+    ├── src                         # typescriptプログラム
     ├── tsconfig.eslint.json
     ├── tsconfig.json
     └── yarn.lock
@@ -30,7 +27,7 @@ FastAPIとReactで作られたサンプルページです。
 
 ## 開発
 
-リポジトリのクローン
+リポジトリのクローン(api/pokemon.jsonを含む)
 ```bash
 git clone --recursive https://github.com/Mizunanari/fastapi-and-react-example.git
 ```
@@ -41,8 +38,7 @@ Dev Continer　もしくは　Github codespacesを使用し、開発環境を構
 
 ターミナル1
 ```
-cd api
-python uvicorn api.main:app --host 0.0.0.0
+uvicorn api.main:app --host 0.0.0.0
 ```
 
 ターミナル2
