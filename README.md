@@ -30,6 +30,11 @@ FastAPIとReactで作られたサンプルページです。
 
 ## 開発
 
+リポジトリのクローン
+```bash
+git clone --recursive https://github.com/Mizunanari/fastapi-and-react-example.git
+```
+
 Dev Continer　もしくは　Github codespacesを使用し、開発環境を構築します。
 
 **実行コマンド**
@@ -37,7 +42,6 @@ Dev Continer　もしくは　Github codespacesを使用し、開発環境を構
 ターミナル1
 ```
 cd api
-git clone https://github.com/fanzeyi/pokemon.json.git
 python uvicorn api.main:app --host 0.0.0.0
 ```
 
