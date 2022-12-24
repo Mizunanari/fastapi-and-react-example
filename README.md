@@ -27,12 +27,18 @@ FastAPIとReactで作られたサンプルページです。
 
 ## 開発
 
+Dev Continer　もしくは　Github codespaces(vscode)を使用し、開発環境を構築します。
+
 リポジトリのクローン(api/pokemon.jsonを含む)
 ```bash
 git clone --recursive https://github.com/Mizunanari/fastapi-and-react-example.git
-```
 
-Dev Continer　もしくは　Github codespacesを使用し、開発環境を構築します。
+または
+
+git clone https://github.com/Mizunanari/fastapi-and-react-example.git
+cd fastapi-and-react-example
+git submodule update --init --recursive
+```
 
 **実行コマンド**
 
