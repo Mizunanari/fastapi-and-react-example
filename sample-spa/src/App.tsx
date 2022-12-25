@@ -6,6 +6,7 @@ import './App.css';
 import AllItem from './components/AllItem';
 import FindItem from './components/FindItem';
 import Items from './components/Items';
+import SingleItem from './components/SingleItem';
 
 const App = () => {
   const [error, setError] = useState<boolean>(false);
@@ -27,6 +28,9 @@ const App = () => {
         </Grid>
         <Grid>
           <Items />
+        </Grid>
+        <Grid>
+          <SingleItem />
         </Grid>
       </Grid2>
     </Box>
