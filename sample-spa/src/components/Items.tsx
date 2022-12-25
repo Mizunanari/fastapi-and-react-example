@@ -18,7 +18,13 @@ const Items = () => {
     for (let i = 1; i <= 809; i += 1) {
       let pngName = '';
       if (imageType === 'images') {
-        pngName = '.png';
+        if (i === 740) {
+          pngName = 'le.png';
+        } else if (i === 662) {
+          pngName = 'r.png';
+        } else {
+          pngName = '.png';
+        }
       } else if (imageType === 'sprites') {
         pngName = 'MS.png';
       }
